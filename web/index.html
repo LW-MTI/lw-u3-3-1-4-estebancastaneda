@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>3.1.4 Bootstrap: Materias</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+  <h2>Materias</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#informatica">Informática</a></li>
+    <li><a data-toggle="tab" href="#matematicas">Matemáticas</a></li>
+    <li><a data-toggle="tab" href="#quimica">Química</a></li>
+  </ul>
+
+  <div class="tab-content">
+      
+    <div id="informatica" class="tab-pane fade in active">
+            <button type="button" class="btn btn-block btn-default" data-toggle="collapse" data-target="#word">Microsoft Word</button>
+            <!--<a class="btn btn-default btn-block" href="#word" data-toggle="collapse" role="button">Microsoft Word</a>-->
+            <p id="word" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button type="button" class="btn  btn-block btn-default" data-toggle="collapse" data-target="#excel">Microsoft Excel</button>
+            <p id="excel" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+    </div>
+      
+    <div id="matematicas" class="tab-pane fade">
+        <button type="button" class="btn btn-block btn-default" data-toggle="collapse" data-target="#calculadora">Calculadora</button>
+        <div id="calculadora" class="collapse">
+            <form>
+                <label>Operación</label>
+                <div class="radio">
+                    <label for="suma"><input type="radio" name="operacion" value="+" id="suma"/>Suma</label>
+                </div>
+                <div class="radio">
+                    <label for="resta"><input type="radio" name="operacion" value="-" id="resta"/>Resta</label>
+                </div>
+                <div class="radio">
+                    <label for="multiplica"><input type="radio" name="operacion" value="*" id="multiplica"/>Multiplicación</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="n1">Número 1</label>
+                    <input class="form-control" type="number" name="n1" id="n1"/>
+                </div>
+                <div class="form-group">
+                    <label for="n2">Número 2</label>
+                    <input class="form-control" type="number" name="n2" id="n1"/>
+                </div>
+            </form>
+            <h3>Resultado:</h3>
+        </div>
+            <p>Realiza operaciones matemáticas.</p>
+    </div>
+      
+    <div id="quimica" class="tab-pane fade">
+        <div>
+            <p class="col-md-2">Materia</p>
+            <p class="col-md-10">
+                Materia es todo lo que tiene masa y ocupa un lugar en el espacio. 
+                La Química es la ciencia que estudia su naturaleza, composición y 
+                transformación. Si la materia tiene masa y ocupa un lugar en el 
+                espacio significa que es cuantificable, es decir, que se puede medir.
+            </p>
+        </div>
+        
+        <div>
+            <p class="col-md-2">Átomo</p>
+            <p class="col-md-10">
+                «Átomo» proviene del griego ἄτομον («átomon»), unión de dos vocablos: 
+                α (a = sin) y τομον (tomon) que significa división ("sin división", algo 
+                que no se puede dividir).1 Un átomo es la unidad constituyente más pequeña 
+                de la materia que tiene las propiedades de un elemento químico.2 Cada sólido, 
+                líquido, gas y plasma se compone de átomos neutros o ionizados. Los átomos 
+                son muy pequeños; los tamaños típicos son alrededor de 100 pm (diez mil 
+                millonésima parte de un metro).3 No obstante, los átomos no tienen límites bien 
+                definidos y hay diferentes formas de definir su tamaño que dan valores diferentes 
+                pero cercanos. Los átomos son lo suficientemente pequeños para que la física clásica 
+                dé resultados notablemente incorrectos. A través del desarrollo de la física, los 
+                modelos atómicos han incorporado principios cuánticos para explicar y predecir mejor 
+                su comportamiento.
+            </p>
+        </div>
+        
+        <div>
+            <p class="col-md-2">Elemento</p>
+            <p class="col-md-10">
+                Un elemento químico es un tipo de materia constituida por átomos de la misma clase. 
+                En su forma más simple posee un número determinado de protones en su núcleo, haciéndolo 
+                pertenecer a una categoría única clasificada con el número atómico, aún cuando éste pueda 
+                desplegar distintas masas atómicas. Es un átomo con características físicas únicas, 
+                aquella sustancia que no puede ser descompuesta mediante una reacción química, en otras 
+                más simples. Si existen dos átomos de un mismo elemento con características distintas y, 
+                en el caso de que estos posean número másico distinto, pertenecen al mismo elemento pero 
+                en lo que se conoce como uno de sus isótopos. También es importante diferenciar entre los 
+                «elementos químicos» de una sustancia simple. Los elementos se encuentran en la tabla 
+                periódica de los elementos.
+            </p>
+        </div>
+        
+        <div>
+            <p class="col-md-2">Compuesto</p>
+            <p class="col-md-10">
+                En Química, un compuesto es una sustancia formada por la unión de dos o más elementos de la 
+                tabla periódica. Una característica esencial es que tiene una fórmula química. Por ejemplo, 
+                la cal es un compuesto formado por calcio y oxígeno en la razón de 1 a 1 (en número de átomos).
+                En general, esta razón fija es debida a una propiedad intrínseca. Un compuesto está formado por 
+                moléculas o iones con enlaces estables y no obedece a una selección humana arbitraria. Por este 
+                motivo el bronce o el chocolate son denominadas mezclas o aleaciones, pero no compuestos. Los 
+                elementos de un compuesto no se pueden dividir o separar por procesos físicos (decantación, 
+                filtración, destilación, sino sólo mediante procesos químicos.
+            </p>
+        </div>
+    </div>
+      
+  </div>
+</div>
+
+</body>
+</html>

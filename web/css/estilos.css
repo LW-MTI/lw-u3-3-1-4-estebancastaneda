@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/03/2017, 12:50:47 PM
+    Author     : Esteban
+*/
+
+div{
+    /*border: 1px solid black;*/
+}
+
+#quimica h4{
+    border: 1px solid gray;
+    padding: 0px;
+}
+#quimica p{
+    border: 1px solid gray;
+    padding: 10px;
+}
